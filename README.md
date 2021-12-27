@@ -1,4 +1,5 @@
 # auto-ct
+<<<<<<< HEAD
 Automates doing Chloe Ting challenges with selenium (has options for tracking progress and setting up music, supports all challenges released thus far)
 
 # How to run this
@@ -21,3 +22,6 @@ You can conveniently automate running workout.py if you want by setting a cronjo
 Some flags are supported for customization (python3 workout.py --help) but I would recommend just doing a satisfactory job setting defaults in setup.py (or if necessary, changing small things directly in the config file 'envb.py')
 
 Thanks for running, good luck!
+=======
+Automates doing Chloe Ting challenges with selenium (has options for tracking progress and setting up music, supports all challenges released thus far) 
+>>>>>>> 33302243b83705194d9cf3e625dc80ad10a86eb7
