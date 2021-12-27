@@ -1,0 +1,49 @@
+Chrome:
+1) Check your Chrome version through [3 dots in corner] -> Help -> About Google Chrome
+A page should come up with this information (The version number may be different but it will be in that format):
+	Version 88.0.4324.150 (Official Build) (64-bit)
+
+2) Go to https://chromedriver.chromium.org/downloads
+	At the very top, there will be a list titled 'Current releases'
+	Underneath you will see a few lines following this format:
+		If you are using Chrome version X, please download ChromeDriver XX.X.XXX.XX
+
+	From the information you gathered in Step 1, click the link with the version that corresponds
+	For example, I have Chrome version 88.0.4324.150 so I would click the hyperlink 'ChromeDriver 88.0.4324.96' on the line 'If you are using Chrome version 88, please download ChromeDriver 88.0.4324.96'
+	If you are for some reason using an older version of Chrome that isn't in 'Current releases', scroll down until you find a hyperlink that says 'ChromeDriver [Your Version Number]' (for example, ChromeDriver 85.0.4183.87)
+
+3) When you click the link corresponding to your browser version, a page will come up:
+Index of /88.0.4324.96/
+	Name	Last modified	Size	ETag
+	Parent Directory	 	-
+	chromedriver_linux64.zip	2021-01-20 19:13:52	5.42MB	40537b052b77c418f05abc1428ecc3c3
+	chromedriver_mac64.zip		2021-01-20 19:13:53	7.76MB	b91266f2468907e6c3e58220182cf19f
+	chromedriver_mac64_m1.zip	2021-01-20 19:13:55	6.99MB	dd6f6ae34fa210b1993fb159d24ce330
+	chromedriver_win32.zip		2021-01-20 19:13:57	5.36MB	9f5e7741994b46b1acca15d779cfe7ad
+	notes.txt			2021-01-20 19:01:19	0.00MB	cbd16414ef0a8fc16a461d9d9dfa6b51
+
+4) Click the link that corresponds with your operating system:
+	if you are running windows, click chromedriver_win32.zip (if for some reason there's only win32 and not win64, apparently that's not a mistake but win32 works on both 32 and 64 bit operating systems lol)
+	if you have a regular mac, click chromedriver_mac64.zip
+	if you have a mac m1 (the newest architecture), click chromedriver_mac64_m1.zip	
+	if you are running linux, click chromedriver_linux64.zip
+ 
+5) When you click the *.zip file, a compressed (zipped) file with the same name as the link you clicked will be downloaded to your computer, likely in your Downloads folder
+
+[if you know what you are doing, you can check the checksum here before unzipping)
+
+6) Go to your Downloads folder though File Explorer (Windows) or Files (Linux) or Finder(MacOS).
+On windows:
+	Right-click the .zip folder and then click 'Extract All'
+	Select a destination to extract to that is on your PATH (C:/Windows is recommended)
+On Linux:
+	Right-click the .zip folder and then click 'Open with Archive Manager'
+	In the box labelled 'Location' put a location that is on your PATH (I recommend /usr/bin)
+On Mac:
+	Double click the folder
+	There will now be an unzipped folder with the same name in your Downloads directory
+	Move that folder to a location on your PATH (I recommend /usr/bin)
+
+(or you can move it wherever (make a folder names .selenium in home or something and then put that location on your PATH)
+
+You have now installed Chrome's webdriver and can use web automation. Congratulations!

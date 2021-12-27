@@ -1,0 +1,6 @@
+If you are on MacOs and using Safari you are set. No setup required
+
+To get geckodriver, go to https://github.com/mozilla/geckodriver/releases and choose the file with your os name in it and .tar.gz or .zip compression. click it to download and extract the file into a location on your path using the gui archive manager on linux or extract all on windows
+if you are good at command-line on linux: gunzip [fname] && tar -x [fname] then mv [location on path] or nano ~/.bash rc export PATH="[location]:$PATH", ctrl+x, 'Y' 
+
+to get chromedriver go to https://chromedriver.chromium.org/downloads and choose the link corresponding to your os and chrome version (chrome version can be found in menu->help->about chrome) and click it to download, then extract the file into a location on your path using the gui archive manager on linux (or just unzip [fname]), extract all to uncompress on windows

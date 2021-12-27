@@ -1,0 +1,44 @@
+Firefox:
+1) Go to https://github.com/mozilla/geckodriver/releases
+	If you scroll down to the bottom of the page, you will see a list titled 'Assets' that resembles this:
+	Assets (9)
+		geckodriver-v0.29.0-linux32.tar.gz		2.71 MB
+		geckodriver-v0.29.0-linux32.tar.gz.asc	833 Bytes
+		geckodriver-v0.29.0-linux64.tar.gz		2.53 MB
+		geckodriver-v0.29.0-linux64.tar.gz.asc	833 Bytes
+		geckodriver-v0.29.0-macos.tar.gz		1.79 MB
+		geckodriver-v0.29.0-win32.zip			1.37 MB
+		geckodriver-v0.29.0-win64.zip			1.44 MB
+		Source code (zip)
+		Source code (tar.gz)
+		
+You may notice that there are a few different compression types, you can choose whichever but it's simplest to just choose the one ending in .tar.gz or .zip
+
+Click a link ending in 32 if you are running a 32-bit system (which is rather unlikely but if you want to make sure, check your Firefox version through [3 horizontal lines in corner] -> Help -> About Firefox and a page should come up with something similar to this information -> '71.0 (64-bit), Mozilla for Ubuntu')
+
+3) Assuming you are running 64-bit architecture, click the link that corresponds with your operating system:
+	if you are running windows, click geckodriver-v[some_version]-win64.zip
+	if you are running MacOS, click geckodriver-v[some_version]-macos.tar.gz
+	if you have a Mac M1, Firefox unfortunately doesn't support that architecture yet. Maybe try Chrome instead?	
+	if you are running Linux, click geckodriver-v[some version]-linux64.tar.gz
+
+For example, I am running 64-bit Linux so I would choose geckodriver-v[some version]-linux64.tar.gz
+ 
+5) When you click the compressed (.zip or .tar.gz) file, a file with the same name as the link you clicked will be downloaded to your computer, likely in your Downloads folder
+
+6) Go to your Downloads folder though File Explorer (Windows) or Files (Linux) or Finder(MacOS).
+On windows:
+	Right-click the .zip folder and then click 'Extract All'
+	Select a destination to extract to that is on your PATH (C:/Windows is recommended)
+On Linux:
+	Right-click the .zip folder and then click 'Open with Archive Manager'
+	In the box labelled 'Location' put a location that is on your PATH (I recommend /usr/bin)
+On Mac:
+	Double click the folder
+	There will now be an unzipped folder with the same name in your Downloads directory
+	Move that folder to a location on your PATH (I recommend /usr/bin)
+
+(or you can move it wherever (make a folder names .selenium in home or something and then put that location on your PATH)
+
+You have now installed Firefox's webdriver and can use web automation. Congratulations!
+

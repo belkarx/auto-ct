@@ -1,0 +1,30 @@
+0) If you want, make a new folder somewhere in your file structure where you can put your source code
+
+1) Click the green button labelled 'Code' (by 'Go to file')
+A window will pop up with 'Clone' and 'HTTPS' - ignore those and click 'Download ZIP' at the bottom
+
+2) The source code has been downloaded as auto-ct-main.zip
+Go to your Downloads folder though File Explorer (Windows) or Files (Linux) or Finder (MacOS).
+On windows:
+	Right-click the auto-ct-main.zip folder and then click 'Extract All'
+	Select a destination to extract to*
+On Linux:
+	Right-click the auto-ct-main.zip folder and then click 'Open with Archive Manager'
+	In the box labelled 'Location' put the location where you want to store the files*
+On Mac:
+	Double click the auto-ct-main.zip folder
+	There will now be an unzipped folder with the same name in your Downloads directory
+	Move that folder to a location*
+
+*you can put the source files wherever you want, I recommend a 'workout' folder in Home or if you have a 'random_crap' folder you can put it there, or you can leave these in Downloads, whatever
+
+Download of source is complete!
+
+3) Now open your terminal (don't be intimidated lol) and navigate to the location where you saved your folder. You can do this with cd: 'cd' once to go to your home directory and then ls to see all your folders and then 'cd [foldername]' and then 'ls' again and then if necessary 'cd [foldername]' again until you are in the folder that contains the files you recently extracted). If you know the absolute path from Home, you can just type 'cd ~/[absolute_path]/[another_folder]/auto-ct-main'
+
+4) Once you are in the folder containing the files 'workout.py' and 'setup.py', type 'python3 setup.py', but first make sure you have python3 and pip3 installed
+You can check this by typing 
+python3 --version (output should be similar to 'Python 3.8.5')
+pip3 --version (output should be similar to 'pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)')
+
+Great, you have completed setting up this program! Refer back to the readme.md page for more information on how to use this :)
