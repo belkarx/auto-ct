@@ -23,4 +23,3 @@ Some flags are supported for customization (python3 workout.py --help) but I wou
 Thanks for running, good luck!
 =======
 Automates doing Chloe Ting challenges with selenium (has options for tracking progress and setting up music, supports all challenges released thus far) 
->>>>>>> 33302243b83705194d9cf3e625dc80ad10a86eb7
